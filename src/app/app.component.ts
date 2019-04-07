@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'accno';
+  alphaindex;
   maskedacc = '';
   character = '*';
   inputacc;
@@ -43,7 +44,6 @@ export class AppComponent {
   }
 
   onSearchChange(searchValue: string ) {
-    console.log(searchValue);
     this.mask(searchValue);
   }
 
